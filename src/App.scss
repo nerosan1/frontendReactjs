@@ -9,4 +9,85 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+// .homepage-container{
+//   width: 100vw;
+// }
 
+@media (min-width: 1350px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1450px !important;
+    }
+}
+.app-container {
+  .header-container{
+    .btn-login {
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+    border: solid 1px #535353;
+    height: 40px;
+}
+    .btn-signup {
+    height: 40px;
+    border-radius: 5px;
+    background-color: #303030;
+    color: white;
+    padding: 0 15px;
+    &:hover {
+    background-color: black;
+
+    }
+}
+    .navbar {
+      padding-top: 20px;
+      z-index: 10;
+      // opacity: 0.6;
+      background-color: rgba(0,0,0,0) !important;
+      .nav-link {
+        &.active{
+      color: red;
+    }
+      }
+    }
+  }
+  .homepage-container{
+    .homepage-content{
+      padding:  100px;
+      position: relative;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .title-1 {
+        font-size: 50px;
+        font-weight: 600;
+      }
+
+      .title-2{
+        font-size: 35px;
+      }
+      .title-3 {
+        button{
+          height: 40px;
+          border-radius: 5px;
+          background-color: #303030;
+          color: white;
+          padding: 0 15px;
+          &:hover {
+          background-color: black;
+
+    }
+        }
+      }
+    }
+  }
+}
+.bg-light{
+  opacity: 0.7;
+}
+video{
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  z-index: -1;
+}
